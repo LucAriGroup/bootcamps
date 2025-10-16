@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Bootcamps | Transform Your Life</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .camp-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .camp-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(to right, #3b82f6, #10b981, #f59e0b);
+            margin: 2rem 0;
+        }
+        
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .program-details {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky-nav">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-mountain text-green-600 text-2xl mr-2"></i>
+                <h1 class="text-xl font-bold text-gray-800">Outdoor Bootcamps</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+                <a href="#categories" class="text-gray-700 hover:text-green-600 font-medium">Programs</a>
+                <a href="#about" class="text-gray-700 hover:text-green-600 font-medium">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-green-600 font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-green-600">Home</a>
+            <a href="#categories" class="block py-2 text-gray-700 hover:text-green-600">Programs</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-green-600">About</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-green-600">Testimonials</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Transform Your Life with Outdoor Bootcamps</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Build discipline, strength, and resilience through our specialized outdoor programs for all ages and goals.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#categories" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">
+                    Explore All Programs
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Bootcamp Programs</h2>
+            
+            <!-- Category 1: Disciplinary & Behavioural -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-gavel text-red-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Disciplinary & Behavioural Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Focus on structure, discipline, and character building.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Youth Disciplinary Bootcamp</h4>
+                            <p class="text-gray-600">Our flagship program focused on building discipline and character in youth through structured activities and challenges.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Ages 12-17</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Teen Intervention Bootcamp</h4>
+                            <p class="text-gray-600">For at-risk or troubled teens needing guidance and structure to develop positive life skills.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Ages 13-18</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">4 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">School Holiday Behavioural Camp</h4>
+                            <p class="text-gray-600">Combines fun activities with discipline during school breaks to maintain positive habits.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Ages 10-16</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">1 week</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Character & Leadership Camp</h4>
+                            <p class="text-gray-600">Builds responsibility, teamwork, and respect through challenging group activities.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">All Ages</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">1-2 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Corporate Discipline & Leadership Camp</h4>
+                            <p class="text-gray-600">For teams and employees to develop discipline, accountability and leadership skills.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded">Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-5 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <!-- Category 2: Fitness & Physical Training -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-dumbbell text-blue-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Fitness & Physical Training Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Outdoor physical conditioning programs for health and fitness.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Military-Style Fitness Bootcamp</h4>
+                            <p class="text-gray-600">Intense physical training inspired by military conditioning to build strength and endurance.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">1-4 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Weight Loss Bootcamp</h4>
+                            <p class="text-gray-600">Focused program for sustainable weight loss through exercise and nutritional guidance.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-8 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">CrossFit / Functional Training Bootcamp</h4>
+                            <p class="text-gray-600">High-intensity functional training in outdoor settings to improve overall fitness.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Intermediate+</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-4 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Strength & Endurance Camp</h4>
+                            <p class="text-gray-600">Focus on building muscular strength and cardiovascular endurance through progressive training.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-6 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Obstacle Course Training Camp</h4>
+                            <p class="text-gray-600">Prepare for obstacle course races with specialized training and technique instruction.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Intermediate</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">4-8 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Morning Fitness Bootcamp</h4>
+                            <p class="text-gray-600">Before work/school sessions to kickstart your day with energy and focus.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Couples or Family Fitness Camp</h4>
+                            <p class="text-gray-600">Fun, shared fitness experiences for couples or families to get active together.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">All Ages</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">Weekends</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <!-- Category 3: Adventure & Survival -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-tree text-green-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Adventure & Survival Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Perfect for youth, corporate groups, or adventure enthusiasts.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Survival Skills Camp</h4>
+                            <p class="text-gray-600">Learn fire making, navigation, shelter building and essential wilderness skills.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Wilderness Adventure Camp</h4>
+                            <p class="text-gray-600">Immerse yourself in nature with challenging adventures and exploration.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Intermediate</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">1-2 weeks</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Outdoor Skills & Bushcraft Camp</h4>
+                            <p class="text-gray-600">Master traditional outdoor skills and bushcraft techniques for wilderness living.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">5-7 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Hiking & Endurance Camp</h4>
+                            <p class="text-gray-600">Build hiking stamina and endurance while exploring beautiful natural landscapes.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Beginner+</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-10 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Military Simulation (Tactical) Camp</h4>
+                            <p class="text-gray-600">Team challenges and missions in realistic outdoor settings.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-5 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <!-- Category 4: Personal Growth & Mindset -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-purple-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-brain text-purple-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Personal Growth & Mindset Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Focus on mental strength, discipline, and life improvement.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Confidence & Self-Esteem Camp</h4>
+                            <p class="text-gray-600">Build self-confidence and develop a positive self-image through challenging activities.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Teens & Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Leadership & Motivation Bootcamp</h4>
+                            <p class="text-gray-600">Develop leadership skills and find your inner motivation for personal and professional success.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Personal Development Retreat</h4>
+                            <p class="text-gray-600">Transformative retreat focused on self-discovery and personal growth.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">5-7 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Mindset & Focus Bootcamp</h4>
+                            <p class="text-gray-600">Train your mind for better focus, mental clarity and peak performance.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">All Ages</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Addiction Recovery Support Camp</h4>
+                            <p class="text-gray-600">Supportive environment for those in recovery, led by qualified staff and counselors.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-4 weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <!-- Category 5: Corporate & Team-Building -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-building text-indigo-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Corporate & Team-Building Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">For companies and organizations.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Corporate Team-Building Camp</h4>
+                            <p class="text-gray-600">Strengthen team dynamics, communication and collaboration through outdoor challenges.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Corporate</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">1-3 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Leadership Development Camp</h4>
+                            <p class="text-gray-600">Develop leadership capabilities in managers and emerging leaders.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Management</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Stress Management Retreat</h4>
+                            <p class="text-gray-600">Help employees manage stress and prevent burnout through mindfulness and outdoor activities.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">All Employees</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-3 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-indigo-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Communication & Problem-Solving Bootcamp</h4>
+                            <p class="text-gray-600">Enhance communication skills and creative problem-solving abilities.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Teams</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-3 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <!-- Category 6: Youth & Educational -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-backpack text-yellow-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Youth & Educational Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Fun, educational, and discipline-based outdoor programs for kids/teens.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">School Leadership Camps</h4>
+                            <p class="text-gray-600">Develop leadership skills in students for school and community roles.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Students</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Anti-Bullying Bootcamp</h4>
+                            <p class="text-gray-600">Empower youth to stand against bullying and build respectful relationships.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Ages 10-16</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-3 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Study Motivation & Focus Bootcamp</h4>
+                            <p class="text-gray-600">Help students develop effective study habits and maintain academic focus.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Ages 12-18</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Life Skills Bootcamp</h4>
+                            <p class="text-gray-600">Teach essential life skills like budgeting, cooking, and basic first aid.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Teens</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Sports Discipline Camp</h4>
+                            <p class="text-gray-600">Focus on soccer, rugby, athletics, etc. with discipline and skill development.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Ages 8-18</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">1-2 weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <!-- Category 7: Wellness & Lifestyle -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-pink-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-sun text-pink-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Wellness & Lifestyle Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Combine health, relaxation, and outdoor activities.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Detox & Nutrition Bootcamp</h4>
+                            <p class="text-gray-600">Reset your body with healthy eating, detoxification and nutritional education.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">5-7 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Yoga & Meditation Retreat</h4>
+                            <p class="text-gray-600">Find inner peace and physical balance through yoga and meditation practices.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">All Levels</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-7 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Mental Health & Resilience Camp</h4>
+                            <p class="text-gray-600">Build mental resilience and learn coping strategies for life's challenges.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">4-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Mindfulness in Nature Camp</h4>
+                            <p class="text-gray-600">Practice mindfulness and presence while immersed in natural surroundings.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">All Ages</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">2-3 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-pink-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Stress Relief & Burnout Recovery Camp</h4>
+                            <p class="text-gray-600">Recover from burnout and learn sustainable stress management techniques.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Adults</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">5-7 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <!-- Category 8: Special Interest -->
+            <div class="mb-16">
+                <div class="flex items-center mb-6">
+                    <div class="bg-teal-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-campground text-teal-600 category-icon"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">Special Interest Bootcamps</h3>
+                </div>
+                <p class="text-gray-600 mb-6">Unique experiences that target specific audiences or themes.</p>
+                <div class="program-details">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Parent-Child Bonding Camp</h4>
+                            <p class="text-gray-600">Strengthen family bonds through shared outdoor experiences and activities.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">Families</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">Weekends</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Couples Connection Camp</h4>
+                            <p class="text-gray-600">Reconnect with your partner through shared challenges and romantic outdoor settings.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">Couples</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Women's Empowerment Bootcamp</h4>
+                            <p class="text-gray-600">Build confidence, strength and community in a supportive women-only environment.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">Women</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Men's Strength & Brotherhood Camp</h4>
+                            <p class="text-gray-600">Foster camaraderie, strength and personal growth in a supportive men's community.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">Men</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-5 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Faith-Based or Spiritual Bootcamp</h4>
+                            <p class="text-gray-600">Combine outdoor challenges with spiritual growth and reflection.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">All Faiths</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">3-7 days</span>
+                            </div>
+                        </div>
+                        <div class="camp-card bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-500">
+                            <h4 class="text-xl font-semibold text-gray-800 mb-2">Community Youth Outreach Camp</h4>
+                            <p class="text-gray-600">Provide outdoor experiences for underserved youth in the community.</p>
+                            <div class="mt-4">
+                                <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">Sponsored</span>
+                                <span class="inline-block bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded ml-2">1-2 weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">About Our Bootcamps</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bootcamp training" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Our Bootcamps?</h3>
+                    <p class="text-gray-600 mb-4">With over 15 years of experience in outdoor education and personal development, our bootcamps are designed to challenge participants physically and mentally while building resilience, discipline, and teamwork.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Certified and experienced instructors</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Safe and controlled environments</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Progressive training methodologies</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Personalized attention in small groups</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Proven results and transformation</li>
+                    </ul>
+                    <div class="mt-8 grid grid-cols-2 gap-4 text-center">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="text-3xl font-bold text-green-600">15+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="text-3xl font-bold text-green-600">5,000+</div>
+                            <div class="text-gray-600">Participants</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="text-3xl font-bold text-green-600">40+</div>
+                            <div class="text-gray-600">Programs</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="text-3xl font-bold text-green-600">98%</div>
+                            <div class="text-gray-600">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">What Our Participants Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">Weight Loss Bootcamp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"I lost 25 pounds and gained so much confidence. The trainers were supportive but pushed me to my limits. Life-changing experience!"</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael Chen" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">Corporate Team-Building Camp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Our company sent our entire team, and the improvement in communication and collaboration was remarkable. Highly recommended for any organization."</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Lisa Rodriguez" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Lisa Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Youth Disciplinary Bootcamp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"My son came back from the bootcamp with a completely new attitude. The structure and discipline have made a huge difference at home and school."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Get In Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-green-400 mt-1 mr-3"></i>
+                            <p>123 Outdoor Way, Wilderness Park, CA 90210</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-green-400 mr-3"></i>
+                            <p>(555) 123-4567</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-green-400 mr-3"></i>
+                            <p>info@outdoorbootcamps.com</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-gray-600 w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="program" class="block mb-1">Program Interest</label>
+                            <select id="program" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-green-500">
+                                <option value="">Select a program</option>
+                                <option value="disciplinary">Disciplinary & Behavioural Bootcamps</option>
+                                <option value="fitness">Fitness & Physical Training Bootcamps</option>
+                                <option value="adventure">Adventure & Survival Bootcamps</option>
+                                <option value="personal">Personal Growth & Mindset Bootcamps</option>
+                                <option value="corporate">Corporate & Team-Building Bootcamps</option>
+                                <option value="youth">Youth & Educational Bootcamps</option>
+                                <option value="wellness">Wellness & Lifestyle Bootcamps</option>
+                                <option value="special">Special Interest Bootcamps</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-green-500"></textarea>
+                        </div>
+                        <button type="button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-mountain text-green-500 text-2xl mr-2"></i>
+                        <h2 class="text-xl font-bold">Outdoor Bootcamps</h2>
+                    </div>
+                    <p class="text-gray-400 mt-2">Transforming lives through outdoor challenges</p>
+                </div>
+                <div class="text-gray-400">
+                    <p>&copy; 2023 Outdoor Bootcamps. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
